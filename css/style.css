@@ -1483,6 +1483,12 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .nav-hamburger { display: flex; }
   .hero-scroll-hint { display: none; }
 
+  /* Hero — 모바일 portrait에서 이미지 위 기준 확대, 하단(풀장) 잘라냄 */
+  .hero-slide img {
+    transform: scale(1.35);
+    transform-origin: top center;
+  }
+
   /* Hero */
   .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.18em; }
   .hero-eyebrow::before, .hero-eyebrow::after { width: 20px; }
@@ -1506,6 +1512,11 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   /* Page hero (서브 페이지) */
   .page-hero { height: 55vh; min-height: 320px; }
   .page-hero-img { object-position: center center; }
+  .page-hero-img--crop-top {
+    transform: scale(1.35);
+    transform-origin: top center;
+    object-position: center top;
+  }
   .page-hero-content { padding: 0 1.5rem 2.5rem; }
   .page-hero-label { font-size: 0.85rem; letter-spacing: 0.2em; }
 
