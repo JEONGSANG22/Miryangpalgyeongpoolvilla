@@ -1467,7 +1467,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
   .rooms-grid { grid-template-columns: 1fr 1fr; }
-  .special-grid { grid-template-columns: repeat(2, 1fr); }
+  .special-card { flex: 0 0 48vw; }
   .intro-features-row { grid-template-columns: repeat(2, 1fr); }
   .hero-scroll-hint { display: none; }
   .room-item-info { padding: 2.5rem 1.5rem; }
@@ -1477,6 +1477,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .container { padding: 0 1.5rem; }
 }
 @media (max-width: 480px) {
+  .special-card { flex: 0 0 72vw; }
   .rooms-grid { grid-template-columns: 1fr; }
   .booking-btns { flex-direction: column; align-items: center; }
   .floating-widget { right: 1rem; bottom: 4rem; }
