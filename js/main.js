@@ -241,7 +241,7 @@ document.querySelectorAll('.mobile-menu a').forEach(a =>
     <a href="special.html#${s.id}" class="special-card">
       <div class="special-card-placeholder">
         ${s.img
-          ? `<img class="special-card-img" src="${s.img}" alt="${s.titleKo}" loading="lazy">`
+          ? `<img class="special-card-img" src="${s.img}" alt="${s.titleKo}" loading="eager">`
           : `<div style="color:rgba(245,240,232,0.3);font-size:0.72rem;letter-spacing:0.1em;">사진 추가</div>`}
       </div>
       <div class="special-card-overlay">
