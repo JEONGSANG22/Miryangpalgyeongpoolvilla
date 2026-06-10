@@ -1483,8 +1483,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .nav-hamburger { display: flex; }
   .hero-scroll-hint { display: none; }
 
-  /* Hero — 모바일 portrait에서 이미지 위 기준 확대, 하단(풀장) 잘라냄 */
-  .hero-slide img {
+  /* Hero — 0.webp(첫 번째 슬라이드)만 위 기준 확대, 하단(풀장) 잘라냄 */
+  .hero-slide:first-child img {
     transform: scale(1.35);
     transform-origin: top center;
   }
