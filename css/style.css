@@ -953,9 +953,11 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 /* ===== ROOM SPEC GRID ===== */
 .room-amenity-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 0;
   text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 /* ===== ROOMS PAGE ===== */
@@ -1519,8 +1521,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .special-card { flex: 0 0 48vw; }
 
   /* Room spec banner */
-  .room-amenity-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .room-amenity-grid > div:nth-child(2) { border-left: none; border-right: none; border-top: 1px solid rgba(201,169,110,0.15); border-bottom: 1px solid rgba(201,169,110,0.15); padding: 2rem 0; }
+  .room-amenity-grid { max-width: 100%; }
 
   /* Room detail */
   .room-item { grid-template-columns: 1fr; }
