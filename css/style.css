@@ -1504,7 +1504,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .rooms-header { padding: 2rem 1.5rem; margin-bottom: 2.5rem; }
 
   /* Page hero (서브 페이지) */
-  .page-hero { height: 52vh; min-height: 300px; }
+  .page-hero { height: 55vh; min-height: 320px; }
+  .page-hero-img { object-position: center center; }
   .page-hero-content { padding: 0 1.5rem 2.5rem; }
   .page-hero-label { font-size: 0.85rem; letter-spacing: 0.2em; }
 
@@ -1528,7 +1529,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .room-item { grid-template-columns: 1fr; }
   .room-item:nth-child(even) { direction: ltr; }
   .room-item-info { padding: 2.5rem 1.5rem; }
-  .room-item-img { min-height: 56vw; }
+  .room-item-img { min-height: 66vw; }
+  .room-slideshow { min-height: 66vw; }
   .room-item-img img,
   .room-slide-img { object-position: center center; }
   .room-price-table { font-size: 0.9rem; }
@@ -1575,8 +1577,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .rooms-grid { grid-template-columns: 1fr; }
   .rooms-header .section-title { font-size: 1.5rem; }
   .room-amenity-grid { gap: 1.5rem; }
-  .room-item-img { min-height: 240px; }
-  .room-slideshow { min-height: 240px; }
+  .room-item-img { min-height: 280px; }
+  .room-slideshow { min-height: 280px; }
 
   /* Special */
   .special-card { flex: 0 0 72vw; }
@@ -1593,7 +1595,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .fw-btn { width: 44px; height: 44px; }
 
   /* Page hero */
-  .page-hero { height: 48vh; min-height: 260px; }
+  .page-hero { height: 52vh; min-height: 280px; }
   .page-hero-content { padding: 0 1.2rem 2rem; }
 
   /* Footer */
