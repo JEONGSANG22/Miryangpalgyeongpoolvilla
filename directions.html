@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오시는 길 | 밀양 팔경 풀빌라 - 경남 밀양시 단장면 감물리</title>
+  <meta name="description" content="밀양 팔경 풀빌라 위치 및 오시는 길. 경상남도 밀양시 단장면 감물리 656번지. 대표전화 010-4362-7200.">
+  <meta name="keywords" content="밀양팔경풀빌라위치, 밀양팔경풀빌라주소, 밀양팔경풀빌라오시는길, 밀양시단장면펜션">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOURDOMAIN.com/directions.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOURDOMAIN.com/directions.html">
+  <meta property="og:title" content="오시는 길 | 밀양 팔경 풀빌라">
+  <meta property="og:description" content="경상남도 밀양시 단장면 감물리 656번지. 대표전화 010-4362-7200.">
+  <meta property="og:image" content="https://YOURDOMAIN.com/outdoor/satellite.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="밀양 팔경 풀빌라">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Serif+KR:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dir-map-wrap {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      border: 1px solid rgba(184,145,74,0.2);
+    }
+    .dir-map-wrap iframe {
+      width: 100%; height: 100%;
+      border: 0; display: block;
+    }
+    .dir-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 4rem;
+    }
+    .dir-card {
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(184,145,74,0.2);
+      padding: 2.5rem 2rem;
+      backdrop-filter: blur(6px);
+    }
+    .dir-card-label {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .dir-card-label::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--gold);
+    }
+    .dir-card p { font-size: 0.96rem; color: var(--body-text); line-height: 2.1; }
+    .dir-card strong { color: var(--dark-text); font-weight: 600; }
+    .dir-card .dir-time {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      color: var(--gold); font-weight: 500;
+    }
+    .dir-address-box {
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(184,145,74,0.22);
+      padding: 3rem 4rem;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      margin-bottom: 3rem;
+    }
+    .dir-address-main {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+      font-weight: 300;
+      color: var(--dark-text);
+      margin-bottom: 0.4rem;
+    }
+    .dir-address-en {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    .dir-btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .dir-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .dir-btn-kakao { background: #FAE100; color: #381e1e; font-weight: 600; }
+    .dir-btn-kakao:hover { opacity: 0.85; }
+    .dir-btn-naver { background: #03C75A; color: #fff; font-weight: 600; }
+    .dir-btn-naver:hover { opacity: 0.85; }
+    .dir-btn-outline { border: 1px solid rgba(184,145,74,0.5); color: var(--gold); }
+    .dir-btn-outline:hover { background: rgba(184,145,74,0.1); }
+    .dir-notice {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(184,145,74,0.18);
+      border-left: 3px solid var(--gold);
+      padding: 1.5rem 2rem;
+      margin-top: 4rem;
+    }
+    .dir-notice p { font-size: 0.96rem; color: var(--body-text); line-height: 2.1; }
+    @media (max-width: 768px) {
+      .dir-info-grid { grid-template-columns: 1fr; }
+      .dir-address-box { padding: 2rem 1.5rem; }
+      .dir-map-wrap { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled">
+    <div class="nav-logo">
+      <span class="nav-logo-text">MIRYANG PALGYEONG POOLVILLA</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="rooms.html">ROOMS</a>
+      <a href="special.html">SPECIAL</a>
+      <a href="booking.html">RESERVATION</a>
+      <a href="directions.html" class="active">LOCATION</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">✕</button>
+    <a href="index.html">HOME</a>
+    <a href="rooms.html">ROOMS</a>
+    <a href="special.html">SPECIAL</a>
+    <a href="booking.html">RESERVATION</a>
+    <a href="directions.html">LOCATION</a>
+  </div>
+
+  <div class="floating-widget"></div>
+
+  <!-- PAGE HERO — 위성사진 배경 -->
+  <div class="page-hero">
+    <img class="page-hero-img" src="outdoor/satellite.png" alt="밀양팔경 풀빌라 위성사진">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="page-hero-label">LOCATION &amp; ADDRESS</p>
+      <h1 class="page-hero-title page-hero-title--sm">오시는 방법</h1>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section style="background: var(--cream-2); padding: 7rem 0;">
+    <div class="container">
+
+      <!-- Address Box -->
+      <div class="dir-address-box reveal">
+        <span class="section-label" style="justify-content:center; margin-bottom:1.2rem;">ADDRESS</span>
+        <p class="dir-address-main">경상남도 밀양시 단장면 감물리656<br>(도로명 주소: 밀양시 단장면 감물리 용소길 115번길)</p>
+        <p class="dir-address-en">656 Gammul-ri, Miryang-si, Gyeongsangnam-do, South Korea</p>
+        <div class="dir-btn-group">
+          <a href="https://map.kakao.com/link/search/경상남도 밀양시 감물리 656" target="_blank" rel="noopener" class="dir-btn dir-btn-kakao">
+            카카오맵 길찾기
+          </a>
+          <a href="https://map.naver.com/v5/search/경상남도 밀양시 감물리 656" target="_blank" rel="noopener" class="dir-btn dir-btn-naver">
+            네이버지도 길찾기
+          </a>
+          <a href="tel:010-0000-0000" class="dir-btn dir-btn-outline">
+            전화 문의
+          </a>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="dir-map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps?q=경상남도+밀양시+감물리+656&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Miryang Palgyeong Poolvilla Location">
+        </iframe>
+      </div>
+
+      <!-- Getting Here -->
+      <div class="dir-info-grid">
+        <div class="dir-card reveal">
+          <div class="dir-card-label">자가용</div>
+          <p>
+            <strong>부산</strong>에서 출발 시<br>
+            남해고속도로 → 밀양 IC 진출<br>
+            → 밀양시내 방면 → 감물리 방면<br>
+            <span class="dir-time">약 1시간 10분</span>
+          </p>
+          <p style="margin-top:1.2rem;">
+            <strong>대구</strong>에서 출발 시<br>
+            중부내륙고속도로 → 밀양 IC 진출<br>
+            → 밀양시내 방면 → 감물리 방면<br>
+            <span class="dir-time">약 50분</span>
+          </p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-card-label">대중교통</div>
+          <p>
+            <strong>KTX 밀양역</strong> 하차 후<br>
+            택시 이용 → 감물리 656<br>
+            <span class="dir-time">택시 약 25분 소요</span>
+          </p>
+          <p style="margin-top:1.2rem;">
+            <strong>밀양 고속버스터미널</strong> 하차 후<br>
+            택시 이용 → 감물리 656<br>
+            <span class="dir-time">택시 약 20분 소요</span>
+          </p>
+        </div>
+        <div class="dir-card reveal">
+          <div class="dir-card-label">주차 안내</div>
+          <p>
+            풀빌라 단지 내<br>
+            <strong>독채별 전용 주차 공간</strong> 제공<br>
+            별도 주차비 없음
+          </p>
+          <p style="margin-top:1.2rem;">
+            내비게이션 검색 시<br>
+            <strong>「밀양 팔경 풀빌라」</strong><br>
+            또는 <strong>「경남 밀양시 감물리 656」</strong> 입력
+          </p>
+        </div>
+      </div>
+
+      <!-- Notice -->
+      <div class="dir-notice reveal">
+        <p style="font-weight:600; color:var(--dark-text); margin-bottom:0.5rem;">입실 안내</p>
+        <p>
+          체크인은 <strong>오후 3시</strong>이며 관리동에서 대면으로 진행됩니다
+          18시 이후 늦은 입실 시 반드시 사전에 연락 주시기 바랍니다<br>
+          처음 방문하시는 경우 입구에 도착하신 후 <strong>전화 연락</strong>을 주시면 안내드리겠습니다
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING CTA -->
+  <section class="booking-banner">
+    <div class="container">
+      <p class="booking-banner-subtitle">RESERVATION</p>
+      <h2 class="booking-banner-title reveal">밀양 팔경 풀빌라에서<br>특별한 하루를 시작하세요</h2>
+      <div class="booking-btns reveal" style="margin-top:2.5rem;">
+        <a href="#" data-kakao class="booking-btn-kakao">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#381e1e"><path d="M12 3C6.48 3 2 6.69 2 11.25c0 2.88 1.88 5.41 4.72 6.87l-1.2 4.46L10.27 19.3A11.9 11.9 0 0 0 12 19.5c5.52 0 10-3.69 10-8.25S17.52 3 12 3z"/></svg>
+          카카오 채널 상담
+        </a>
+        <a href="#" data-naver class="booking-btn-naver">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M16.273 12.845L7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727z"/></svg>
+          네이버 예약
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="nukki-logo.webp" alt="Miryang Palgyeong Poolvilla" style="height:150px;width:auto;margin-bottom:1rem;opacity:0.85;object-fit:contain;">
+          <div class="footer-brand-name">밀양 팔경 풀빌라</div>
+          <div class="footer-brand-en">MIRYANG PALGYEONG POOLVILLA</div>
+        </div>
+        <div class="footer-info"></div>
+        <div class="footer-social">
+          <a href="#" data-kakao>카카오 채널 →</a>
+          <a href="#" data-naver>네이버 예약 →</a>
+          <a href="#" target="_blank" rel="noopener">인스타그램 →</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+© 2026 밀양 팔경 풀빌라. All rights reserved.<br>
+Website Designed & Developed by SANOVA DESIGN     </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
