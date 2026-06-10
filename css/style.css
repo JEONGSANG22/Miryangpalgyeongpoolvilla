@@ -1460,26 +1460,121 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .footer-inner { flex-direction: column; gap: 2rem; }
   .footer-social { align-items: flex-start; }
 }
+
 @media (max-width: 768px) {
   :root { --nav-h: 64px; }
+
+  /* Nav */
   .nav { padding: 0 1.5rem; }
   .nav-logo img { height: 48px; }
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
-  .rooms-grid { grid-template-columns: 1fr 1fr; }
-  .special-card { flex: 0 0 48vw; }
-  .intro-features-row { grid-template-columns: repeat(2, 1fr); }
   .hero-scroll-hint { display: none; }
+
+  /* Hero */
+  .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.18em; }
+  .hero-eyebrow::before, .hero-eyebrow::after { width: 20px; }
+
+  /* Section padding 축소 */
+  .intro-section { padding: 5rem 0; }
+  .rooms-section { padding: 4.5rem 0; }
+  .section { padding: 4rem 0; }
+  .room-detail-list { padding: 3.5rem 0; }
+  .booking-banner { padding: 4rem 0; }
+  .special-section { padding: 4rem 0 3rem; }
+
+  /* Container */
+  .container { padding: 0 1.5rem; }
+  .container-wide { padding: 0 1rem; }
+
+  /* Heading glass */
+  .heading-glass { padding: 2rem 1.5rem; }
+  .rooms-header { padding: 2rem 1.5rem; margin-bottom: 2.5rem; }
+
+  /* Page hero (서브 페이지) */
+  .page-hero { height: 42vh; min-height: 260px; }
+  .page-hero-content { padding: 0 1.5rem 2.5rem; }
+  .page-hero-label { font-size: 0.85rem; letter-spacing: 0.2em; }
+
+  /* Intro */
+  .intro-body { font-size: 1rem; }
+  .intro-sub { font-size: 0.95rem; }
+  .intro-features-row { grid-template-columns: repeat(2, 1fr); }
+
+  /* Rooms */
+  .rooms-grid { grid-template-columns: 1fr 1fr; }
+  .rooms-header .section-title { font-size: 1.7rem; }
+
+  /* Special */
+  .special-card { flex: 0 0 48vw; }
+
+  /* Room detail */
   .room-item-info { padding: 2.5rem 1.5rem; }
+  .room-item-img { min-height: 260px; }
+  .room-price-table { font-size: 0.9rem; }
+  .room-price-row { grid-template-columns: 3.8rem 1fr auto; }
+
+  /* Service */
   .service-info { padding: 2.5rem 1.5rem; }
+
+  /* Booking */
   .booking-card { padding: 2rem 1.5rem; }
   .checkin-grid { grid-template-columns: 1fr; }
-  .container { padding: 0 1.5rem; }
+  .pet-rules-inner { padding: 0 1.5rem; }
+
+  /* Footer */
+  .footer-brand img { height: 100px; }
+  .footer-social { align-items: flex-start; }
+  .footer-bottom { font-size: 0.78rem; line-height: 1.9; }
 }
+
 @media (max-width: 480px) {
-  .special-card { flex: 0 0 72vw; }
+  /* Section padding 추가 축소 */
+  .intro-section { padding: 3.5rem 0; }
+  .rooms-section { padding: 3.5rem 0; }
+  .section { padding: 3rem 0; }
+  .room-detail-list { padding: 2.5rem 0; }
+  .booking-banner { padding: 3rem 0; }
+  .special-section { padding: 3rem 0 2.5rem; }
+
+  /* Container */
+  .container { padding: 0 1.2rem; }
+  .container-wide { padding: 0 0.8rem; }
+
+  /* Typography */
+  .section-title { font-size: 1.55rem; }
+  .intro-copy { font-size: 1.25rem; }
+  .hero-eyebrow { display: none; }
+  .page-hero-label { font-size: 0.78rem; }
+
+  /* Heading glass */
+  .heading-glass { padding: 1.5rem 1.2rem; }
+  .rooms-header { padding: 1.5rem 1.2rem; }
+
+  /* Rooms */
   .rooms-grid { grid-template-columns: 1fr; }
+  .rooms-header .section-title { font-size: 1.5rem; }
+
+  /* Special */
+  .special-card { flex: 0 0 72vw; }
+
+  /* Features */
+  .intro-features-row { grid-template-columns: 1fr 1fr; }
+
+  /* Booking */
   .booking-btns { flex-direction: column; align-items: center; }
+  .booking-btn-kakao, .booking-btn-naver { width: 100%; max-width: 280px; justify-content: center; }
+
+  /* Floating widget */
   .floating-widget { right: 1rem; bottom: 4rem; }
   .fw-btn { width: 44px; height: 44px; }
+
+  /* Page hero */
+  .page-hero { height: 36vh; min-height: 220px; }
+  .page-hero-content { padding: 0 1.2rem 2rem; }
+
+  /* Footer */
+  .footer { padding: 3rem 0 1.5rem; }
+  .footer-brand img { height: 80px; }
+  .footer-inner { gap: 1.5rem; }
 }
