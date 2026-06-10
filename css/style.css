@@ -951,7 +951,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 
 /* ===== ROOM SPEC GRID ===== */
-.room-spec-grid {
+.room-amenity-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -1161,7 +1161,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   line-height: 1.9;
   margin-bottom: 2rem;
 }
-.room-spec-grid {
+.room-amenity-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.4rem 1.5rem;
@@ -1502,7 +1502,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .rooms-header { padding: 2rem 1.5rem; margin-bottom: 2.5rem; }
 
   /* Page hero (서브 페이지) */
-  .page-hero { height: 42vh; min-height: 260px; }
+  .page-hero { height: 52vh; min-height: 300px; }
   .page-hero-content { padding: 0 1.5rem 2.5rem; }
   .page-hero-label { font-size: 0.85rem; letter-spacing: 0.2em; }
 
@@ -1519,14 +1519,16 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .special-card { flex: 0 0 48vw; }
 
   /* Room spec banner */
-  .room-spec-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .room-spec-grid > div:nth-child(2) { border-left: none; border-right: none; border-top: 1px solid rgba(201,169,110,0.15); border-bottom: 1px solid rgba(201,169,110,0.15); padding: 2rem 0; }
+  .room-amenity-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .room-amenity-grid > div:nth-child(2) { border-left: none; border-right: none; border-top: 1px solid rgba(201,169,110,0.15); border-bottom: 1px solid rgba(201,169,110,0.15); padding: 2rem 0; }
 
   /* Room detail */
   .room-item { grid-template-columns: 1fr; }
   .room-item:nth-child(even) { direction: ltr; }
   .room-item-info { padding: 2.5rem 1.5rem; }
-  .room-item-img { min-height: 280px; }
+  .room-item-img { min-height: 56vw; }
+  .room-item-img img,
+  .room-slide-img { object-position: center center; }
   .room-price-table { font-size: 0.9rem; }
   .room-price-row { grid-template-columns: 3.8rem 1fr auto; }
 
@@ -1570,7 +1572,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   /* Rooms */
   .rooms-grid { grid-template-columns: 1fr; }
   .rooms-header .section-title { font-size: 1.5rem; }
-  .room-spec-grid { gap: 1.5rem; }
+  .room-amenity-grid { gap: 1.5rem; }
   .room-item-img { min-height: 240px; }
   .room-slideshow { min-height: 240px; }
 
@@ -1589,7 +1591,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .fw-btn { width: 44px; height: 44px; }
 
   /* Page hero */
-  .page-hero { height: 36vh; min-height: 220px; }
+  .page-hero { height: 48vh; min-height: 260px; }
   .page-hero-content { padding: 0 1.2rem 2rem; }
 
   /* Footer */
