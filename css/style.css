@@ -450,6 +450,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   line-height: 2;
   padding-left: 0.9rem;
 }
+br.m-br { display: none; }
 .intro-right {
   display: flex;
   align-items: stretch;
@@ -1531,6 +1532,9 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .page-hero-label { font-size: 0.85rem; letter-spacing: 0.2em; }
 
   /* Intro */
+  .intro-copy, .intro-body { white-space: normal; }
+  br.pc-br { display: none; }
+  br.m-br { display: inline; }
   .intro-body { font-size: 1rem; }
   .intro-sub { font-size: 0.95rem; }
   .intro-features-row { grid-template-columns: repeat(2, 1fr); }
