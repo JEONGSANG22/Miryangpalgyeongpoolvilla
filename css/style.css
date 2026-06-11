@@ -1534,6 +1534,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .intro-body { font-size: 1rem; }
   .intro-sub { font-size: 0.95rem; }
   .intro-features-row { grid-template-columns: repeat(2, 1fr); }
+  /* 모바일 터치 hover 고착으로 인한 marquee 정지 방지 */
+  .special-grid:hover { animation-play-state: running; }
 
   /* Rooms */
   .rooms-grid { grid-template-columns: 1fr 1fr; }
