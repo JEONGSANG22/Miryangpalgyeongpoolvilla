@@ -1490,6 +1490,14 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .nav-links { display: none; }
   .nav-hamburger { display: flex; margin-left: auto; }
   .hero-scroll-hint { display: none; }
+  /* 모바일 스크롤 시 크림 배경 대신 다크 반투명 유지 */
+  .nav.scrolled {
+    background: rgba(15, 12, 9, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: none;
+  }
+  .nav.scrolled .nav-hamburger span { background: rgba(240, 235, 226, 0.9); }
 
   /* Hero — 슬라이드별 모바일 object-position */
   .hero-slide:first-child img {
