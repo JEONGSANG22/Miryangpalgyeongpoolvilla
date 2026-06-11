@@ -1590,7 +1590,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   /* Typography */
   .section-title { font-size: 1.55rem; }
   .intro-copy { font-size: 1.25rem; }
-  .hero-eyebrow { display: none; }
+  .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.15em; }
   .page-hero-label { font-size: 0.78rem; }
 
   /* Heading glass */
