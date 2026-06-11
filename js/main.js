@@ -24,6 +24,7 @@ const D = {
   hero: {
     slides: [
       { src: "sample/0.webp", alt: "밀양팔경 풀빌라" },
+      { src: "sample/0-1.webp", alt: "밀양팔경 풀빌라" },
       { src: "sample/1.webp", alt: "밀양팔경 풀빌라 전경" },
       { src: "sample/2.webp", alt: "프라이빗 풀장" },
       { src: "sample/3.webp", alt: "객실 내부" },
@@ -260,7 +261,7 @@ document.querySelectorAll('.mobile-menu a').forEach(a =>
   if (!list) return;
 
   const roomPhotoOrders = [
-    ['ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp'],
+    ['ROOMS/1-1.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp'],
     ['ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp'],
     ['ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp'],
     ['ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp'],
