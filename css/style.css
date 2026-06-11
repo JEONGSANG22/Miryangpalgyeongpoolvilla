@@ -1459,6 +1459,13 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .reveal-delay-2 { transition-delay: 0.3s; }
 .reveal-delay-3 { transition-delay: 0.45s; }
 
+/* ===== PC 전용: 1-1.webp 우측 구도 표시 ===== */
+@media (min-width: 769px) {
+  .room-item:first-child .room-slide-img:first-child {
+    object-position: right center;
+  }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .rooms-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1531,6 +1538,8 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   /* Rooms */
   .rooms-grid { grid-template-columns: 1fr 1fr; }
   .rooms-header .section-title { font-size: 1.7rem; }
+  .room-type-sep { display: none; }
+  .room-type-tag { display: block; line-height: 2.4; }
 
   /* Special */
   .special-card { flex: 0 0 48vw; }
