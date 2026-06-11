@@ -262,13 +262,13 @@ document.querySelectorAll('.mobile-menu a').forEach(a =>
 
   const roomPhotoOrders = [
     ['ROOMS/1-1.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp'],
-    ['ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp'],
-    ['ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp'],
-    ['ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp'],
-    ['ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp'],
-    ['ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp'],
-    ['ROOMS/1.webp','ROOMS/3.webp','ROOMS/5.webp','ROOMS/2.webp','ROOMS/4.webp','ROOMS/6.webp'],
-    ['ROOMS/2.webp','ROOMS/4.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/3.webp','ROOMS/5.webp'],
+    ['ROOMS/1-1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp'],
+    ['ROOMS/1-1.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp'],
+    ['ROOMS/1-1.webp','ROOMS/4.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp'],
+    ['ROOMS/1-1.webp','ROOMS/5.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp'],
+    ['ROOMS/1-1.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/2.webp','ROOMS/3.webp','ROOMS/4.webp','ROOMS/5.webp'],
+    ['ROOMS/1-1.webp','ROOMS/1.webp','ROOMS/3.webp','ROOMS/5.webp','ROOMS/2.webp','ROOMS/4.webp','ROOMS/6.webp'],
+    ['ROOMS/1-1.webp','ROOMS/2.webp','ROOMS/4.webp','ROOMS/6.webp','ROOMS/1.webp','ROOMS/3.webp','ROOMS/5.webp'],
   ];
 
   list.innerHTML = D.rooms.map((r, i) => {
