@@ -5,7 +5,7 @@ const D = {
     titleEn: "MIRYANG PALGYEONG POOLVILLA",
     location: "경상남도 밀양시 단장면 감물리 656번지<br>도로명 주소: 밀양시 단장면 감물리 용소길 115번길 ",
     phone: "010-4362-7200",
-    kakaoChannel: "http://pf.kakao.com/_GuxinX/chat",
+    kakaoChannel: "https://pf.kakao.com/_GuxinX/chat",
     instagram: "#",
     naverBooking: "#",
     owner: "박희설",
